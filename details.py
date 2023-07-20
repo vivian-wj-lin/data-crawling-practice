@@ -24,9 +24,47 @@ payload = {
   "TYPEK": "sii"
 }
 
-res = requests.post(url, data=payload, headers=headers).text
-print(res)
+# res = requests.post(url, data=payload, headers=headers).text
+# print(res)
 
-# soup = BeautifulSoup(res2, "html.parser")
-# df_list = pd.read_html(str(soup))
-# print(df_list) # No tables found
+## soup = BeautifulSoup(res2, "html.parser")
+## df_list = pd.read_html(str(soup))
+## print(df_list) # No tables found
+
+
+# mops2.js
+
+# https://mops.twse.com.tw/mops/web/ajax_t05st01
+
+# {
+#   "step": "2",
+#   "colorchg": "1",
+#   "co_id": "6414",
+#   "TYPEK": "sii",
+#   "off": "1",
+#   "firstin": "1",
+#   "i": "22",
+#   "year": "2023",
+#   "month": "0",
+#   "spoke_date": "20230706",
+# "spoke_time": "145811",
+#   "seq_no": "5",
+#   "b_date": "1",
+#   "e_date": "1",
+#   "t51sb10": "t51sb10"}
+	#status=200, <title>公開資訊觀測站</title>
+
+# https://mops.twse.com.tw/mops/web/ajax_t05st01
+# {"h260":"樺漢",
+# "h261":"6414",
+# "h262":"20230706",
+# "h264":"董事會決議發行本公司國內第五次無擔保轉換公司債",
+# "h263":"145811",
+# "h265":"5",
+# "h266":"sii",
+# "h267":"22",
+# "h268":"20230706",
+# "h269":"2",
+# "t51sb10":"t51sb10"
+# }
+	#status=200, <title>公開資訊觀測站</title>
